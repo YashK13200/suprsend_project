@@ -44,7 +44,7 @@ form.addEventListener("submit", (e) => {
 // SuprSend integration
 const suprsend = (function() {
 //     let publicKey = "YOUR_PUBLIC_KEY"; // Replace with your SuprSend public key
-    let publicKey = "SS.Djp6QzTIfQR4L6FGBjAQjoqxHdwkGZS--8zKL2tuxA8"; // Replace with your SuprSend public key
+    let publicKey = "SS.gzfubvxP0AixNWqOksM90ekfoNAWptxTnJHsS8290l4"; // Replace with your SuprSend public key
     let apiUrl = "https://hub.suprsend.com/trigger/"; // SuprSend API URL
 
     function subscribeToNotifications(email) {
