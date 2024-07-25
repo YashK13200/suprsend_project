@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Kashyap Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/yash.jpg" alt="Yash Kashyap" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa-regular fa-address-book"></i> Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>
+                    Hi, I'm <span>Yash Kr. Kashyap</span><br />
+                    A Web Developer
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/yashpic.png" alt="Yash Kashyap" />
+                </div>
+                <div class="about-col-2">
+                    <h1 id="sub-title">About Me</h1>
+                    <p>
+                        "Hi, I'm Yash Kr. Kashyap - A Programmer & frontend developer with experience in C++, Java, JavaScript, HTML, CSS, Bootstrap, and GitHub. I love creating responsive and beautiful user interfaces that deliver great user experiences."<br />
+                        I also have good knowledge of DSA, having solved 200+ problems across various coding platforms such as LeetCode, CodeChef, HackerRank, and more.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event,'experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages:</span><br />C/C++, Java, JavaScript</li>
+                            <li><span>Web Development:</span><br />Bootstrap, HTML, CSS, JavaScript, jQuery</li>
+                            <li><span>Video Editing:</span><br />DaVinci Resolve</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Development Intern at CodeClause:</span><br />Designed and developed dynamic and responsive websites using HTML, CSS, JavaScript. Optimized website for speed and user experience.</li>
+                            <li><span>Web Development and Designing at Oasis Infobyte:</span><br />Utilized responsive design to ensure compatibility across all devices.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>College:</span><br />UIET CSJM University Kanpur</li>
+                            <li><span>Bachelor of Technology in Computer Science:</span><br />CGPA: 9.13 (Till 4th Sem)</li>
+                            <li><span>10 + 2 with Maths:</span><br />RPM Academy Gorakhpur<br />Percentage: 86.6</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 id="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Designing and developing dynamic and responsive websites using HTML, CSS, JavaScript, and other technologies.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Video Editing</h2>
+                    <p>Video editor with skills and knowledge of the latest video editing software, tools, and techniques.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Blog Writing</h2>
+                    <p>Understanding of how to turn complicated topics into friendly dialogs.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/project2.png" alt="Landing Page" />
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>Designed and developed a dynamic landing page using HTML, CSS, and Bootstrap.</p>
+                        <a href="https://yashk13200.github.io/OIBSIB_TASK1/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project1.png" alt="TinDog App" />
+                    <div class="layer">
+                        <h3>TinDog App</h3>
+                        <p>A frontend site which is a Tinder-like app for dogs. Technologies used: HTML, CSS, JavaScript, Bootstrap.</p>
+                        <a href="https://tindog-ykk.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project.png" alt="URL Shortener" />
+                    <div class="layer">
+                        <h3>URL Shortener</h3>
+                        <p>An URL shortener that converts long URLs into shorter codes.</p>
+                        <a href="https://yash-urlshortner.netlify.app/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project3.png" alt="Login Form" />
+                    <div class="layer">
+                        <h3>Login Form</h3>
+                        <p>A well-designed login page, visually appealing and secure.</p>
+                        <a href="https://yashk13200.github.io/Login-form/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project5.png" alt="Coming Soon" />
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>More projects are on the way.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/project5.png" alt="Coming Soon" />
+                    <div class="layer">
+                        <h3>Coming Soon</h3>
+                        <p>More projects are on the way.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a class="btn" href="#">See More</a>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> yashkashyap131@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 9336359799</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/yash-kumar-kashyap-b0490319a/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a class="btn btn2" href="images/Y_K_K_resume.pdf" download><i class="fa-solid fa-file-arrow-down" id="downbtn"></i> &emsp; MY RESUME</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required />
+                        <input type="email" name="Email" placeholder="Your Email" required />
+                        <textarea name="Message" cols="30" rows="6" placeholder="Your Message"></textarea>
+                        <button class="btn btn2" type="submit">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscribe Section -->
+    <div id="subscribe">
+        <h1 class="sub-title">Subscribe for Notifications</h1>
+        <form id="subscribe-form">
+            <input type="email" id="email-input" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn2">Subscribe</button>
+        </form>
+    </div>
+
+    <!-- Notification Inbox -->
+    <div id="notification-inbox" class="notification-inbox">
+        <h2>Notifications</h2>
+        <ul id="notification-list"></ul>
+    </div>
+
+    <div class="copyright">
+        <p>Yash Kr. Kashyap ❤️ © <span id="currentYear"></span> Copyright All Rights Reserved.</p>
+    </div>
+
+    <script>
+        // Get the current year and update the copyright year
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+    <script src="https://cdn.suprsend.com/suprsend.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
